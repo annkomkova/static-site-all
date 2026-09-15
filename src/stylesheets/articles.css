@@ -1,0 +1,50 @@
+@media screen and (max-width: 1279px) {
+  .W_ArticlesCard {
+    width: calc(33.333% - 22rem);
+  }
+  .O_Articles .O_IndexSectionCard {
+    width: calc(50% - 22rem);
+  }
+  .O_Swiper {
+    height: 460rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .O_Articles,
+  .O_Swiper {
+    width: 100%;
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+  .O_Swiper {
+    height: 400rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: calc(1vw / 7);
+  }
+  .W_ArticlesCard {
+    width: calc(50% - 12rem);
+  }
+  .A_ArticlesCardImage {
+    width: 160rem;
+  }
+  .W_ArticlesCardImageWrapper {
+    min-height: 240rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: calc(1vw / 5);
+  }
+  .W_ArticlesCard,
+  .O_Articles .O_IndexSectionCard {
+    width: 100%;
+  }
+  .O_Articles,
+  .O_Swiper {
+    padding: 0 var(--space-4);
+  }
+}

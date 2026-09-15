@@ -1,0 +1,148 @@
+/* articles.html */
+.C_ArticlesCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+/* ______________styleguide___________ */
+.C_MainSectionLinks {
+  width: 220rem;
+  position: sticky;
+  top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.C_MainSectionLinks a:active {
+  color: var(--accent);
+}
+
+/* ________________test___________ */
+.C_TestAnswerMessages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.C_Icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+.C_MainLinks {
+  display: flex;
+  gap: var(--space-4);
+}
+.C_MainLinks a {
+  font-size: var(--fs-sm);
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s var(--ease);
+}
+.C_MainLinks a:hover {
+  color: var(--ink);
+}
+.C_IndexSectionCards,
+.C_SearchResults {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5) 0 0;
+  flex-wrap: wrap;
+}
+.C_IndexSectionCardTags {
+  margin: var(--space-3) 0 0;
+  display: flex;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+.C_MenuLinks {
+  display: flex;
+}
+
+/* поиск */
+.C_Dropdown {
+  display: none;
+  flex-direction: column;
+  width: 320rem;
+  border: 1rem solid var(--line);
+  position: absolute;
+  z-index: 20;
+  top: 44rem;
+  border-radius: var(--radius-md);
+  padding-top: var(--space-2);
+  background-color: var(--paper);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.C_Footer {
+  background-color: var(--ink);
+  color: white;
+  width: 100%;
+  padding: var(--space-7) var(--space-6) var(--space-5);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+/* ______________страница отдельной статьи___________ */
+.C_ArticleList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.C_ArticleList li {
+  position: relative;
+  padding-left: var(--space-4);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.C_ArticleList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.C_RelatedArticles {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* ______________стайлгайд: свотчи цветов___________ */
+.C_ColorSwatches {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin: var(--space-4) 0 var(--space-6);
+}
+.W_ColorSwatch {
+  width: 160rem;
+}
+.A_ColorSwatchChip {
+  width: 100%;
+  height: 96rem;
+  border-radius: var(--radius-md);
+  border: 1rem solid var(--line);
+  margin-bottom: var(--space-2);
+}
+.A_ColorSwatchName {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--ink);
+  display: block;
+}
+.A_ColorSwatchHex {
+  font-size: var(--fs-xs);
+  color: var(--ink-faint);
+  font-family: monospace;
+}

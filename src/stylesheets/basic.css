@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-size: 16rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+a {
+  color: inherit;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  background: var(--ink-soft);
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  background: var(--accent);
+  opacity: 1;
+}
+
+:root {
+  /* ---------- цвет ---------- */
+  --ink: #15161a;
+  --ink-soft: #5c5d66;
+  --ink-faint: #8d8e96;
+  --paper: #ffffff;
+  --paper-soft: #f4f4f1;
+  --paper-strong: #ebeae5;
+  --line: #e2e1db;
+  --line-strong: #cfcec7;
+
+  --accent: #2c6e49;
+  --accent-strong: #1c4a30;
+  --accent-soft: #e7f0e9;
+  --on-accent: #ffffff;
+
+  --amber: #b8860b;
+  --amber-soft: #faf3e0;
+  --red: #b3392c;
+  --red-soft: #fbeae7;
+
+  /* обратная совместимость со старыми именами переменных,
+     которые использовались по всем component-css файлам */
+  --bg-card-color: var(--paper);
+  --text-main-color: var(--ink);
+  --button-basic-color: var(--accent);
+  --button-hover-color: var(--accent-strong);
+
+  /* ---------- типографика ---------- */
+  --fs-xs: 13rem;
+  --fs-sm: 15rem;
+  --fs-base: 17rem;
+  --fs-md: 20rem;
+  --fs-lg: 26rem;
+  --fs-xl: 34rem;
+  --fs-2xl: 46rem;
+  --fs-3xl: 64rem;
+  --fs-hero: 92rem;
+
+  /* ---------- отступы ---------- */
+  --space-1: 8rem;
+  --space-2: 12rem;
+  --space-3: 16rem;
+  --space-4: 24rem;
+  --space-5: 32rem;
+  --space-6: 48rem;
+  --space-7: 64rem;
+  --space-8: 96rem;
+
+  --container: 1280rem;
+
+  /* ---------- форма ---------- */
+  --radius-sm: 6rem;
+  --radius-md: 10rem;
+  --radius-lg: 18rem;
+  --radius-pill: 999rem;
+
+  --shadow-sm: 0 1rem 2rem rgba(21, 22, 26, 0.06);
+  --shadow-md: 0 12rem 32rem rgba(21, 22, 26, 0.08);
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}

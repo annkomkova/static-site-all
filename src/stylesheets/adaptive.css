@@ -1,0 +1,122 @@
+@media screen and (max-width: 1280px) {
+  .W_IndexContainer {
+    gap: var(--space-6);
+  }
+  .O_Articles .O_IndexSectionCard {
+    width: calc(50% - 16rem);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .S_Main {
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+  .O_Sidebar {
+    width: 100%;
+    position: static;
+  }
+  .C_MainSectionLinks {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .O_Aside {
+    display: none;
+  }
+  .W_IndexContainer {
+    flex-direction: column;
+  }
+  .W_IndexContainerInfo,
+  .M_IndexContainerImage {
+    width: 100%;
+  }
+  .M_IndexContainerImage {
+    order: -1;
+    max-width: 320rem;
+    margin: 0 auto;
+  }
+  .O_IndexAnimation {
+    display: none;
+  }
+  .O_Test {
+    flex-direction: column;
+  }
+  .M_TestImageSection {
+    width: 100%;
+  }
+  .W_ArticleBody {
+    flex-direction: column;
+  }
+  .O_ArticleSpecs {
+    width: 100%;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: calc(1vw / 6);
+  }
+  .S_Menu {
+    flex-wrap: wrap;
+    row-gap: var(--space-3);
+  }
+  .W_SearchContainer {
+    order: 3;
+    width: 100%;
+  }
+  .O_MenuLinks,
+  .C_MenuLinks {
+    order: 2;
+  }
+  .A_IndexH1 {
+    font-size: 130rem;
+  }
+  .A_IndexFormInput,
+  .A_IndexFormButton {
+    width: 100%;
+    margin: var(--space-2) 0 0 0;
+  }
+  .C_Footer {
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+  .O_IndexSectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .A_IndexText.section {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .O_Articles .O_IndexSectionCard,
+  .W_ArticlesCard {
+    width: 100%;
+  }
+  .O_IndexSectionCard {
+    width: 100%;
+  }
+  .S_IndexSection,
+  .S_Main {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+  .O_ArticleHero {
+    padding: var(--space-6) var(--space-4) var(--space-5);
+  }
+  .W_ArticleBody {
+    padding: 0 var(--space-4);
+  }
+  .S_Dictionary {
+    padding: var(--space-6) var(--space-4) var(--space-7);
+  }
+  .W_DictionaryTerm {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}

@@ -1,0 +1,181 @@
+/* articles.html, styleguide */
+
+.S_Articles,
+.S_Styleguide {
+  background-color: var(--paper);
+}
+.S_Main {
+  display: flex;
+  gap: var(--space-7);
+  padding: var(--space-7) var(--space-6) var(--space-8);
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  align-items: flex-start;
+}
+.O_MainSection {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ________________test___________ */
+.S_Test {
+  padding: var(--space-6);
+  width: 100%;
+}
+/* заглушка индекса */
+.S_IndexPage {
+  display: block;
+}
+.S_IndexSection {
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+  width: 100%;
+  max-width: var(--container);
+}
+.S_IndexSectionCard {
+  background-color: var(--paper-soft);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+/* ______________страница отдельной статьи___________ */
+.S_ArticlePage {
+  background: var(--paper);
+  padding-bottom: var(--space-8);
+}
+.M_SpecsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.M_SpecsTable tr {
+  border-top: 1rem solid var(--line);
+}
+.M_SpecsTable tr:first-child {
+  border-top: none;
+}
+.M_SpecsTable th,
+.M_SpecsTable td {
+  text-align: left;
+  padding: var(--space-2) 0;
+  font-size: var(--fs-sm);
+  vertical-align: top;
+}
+.M_SpecsTable th {
+  color: var(--ink-faint);
+  font-weight: 500;
+  width: 40%;
+}
+.M_SpecsTable td {
+  color: var(--ink);
+  font-weight: 500;
+}
+.card {
+  border: 1rem solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-top: var(--space-5);
+  background: var(--paper-soft);
+}
+
+/* ______________словарь___________ */
+.S_Dictionary {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6) var(--space-8);
+}
+.M_DictionaryLetters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  padding: var(--space-5) 0;
+  border-bottom: 1rem solid var(--line);
+  margin-bottom: var(--space-5);
+}
+.A_DictionaryLetter {
+  width: 32rem;
+  height: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s var(--ease);
+}
+.A_DictionaryLetter:hover {
+  background: var(--paper-soft);
+  color: var(--ink);
+}
+.A_DictionaryLetter.active {
+  background: var(--ink);
+  color: #fff;
+}
+.A_DictionaryLetter[disabled] {
+  color: var(--line-strong);
+  cursor: default;
+}
+.C_DictionaryList {
+  display: flex;
+  flex-direction: column;
+}
+.W_DictionaryTerm {
+  display: grid;
+  grid-template-columns: 220rem 1fr;
+  gap: var(--space-6);
+  padding: var(--space-4) 0;
+  border-top: 1rem solid var(--line);
+}
+.W_DictionaryTerm:first-child {
+  border-top: none;
+}
+.A_DictionaryTerm {
+  font-size: var(--fs-md);
+  font-weight: 500;
+  color: var(--ink);
+}
+.A_DictionaryDefinition {
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+/* ______________основы React: демо-страница___________ */
+.O_Container {
+  width: 100%;
+  max-width: 640rem;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-5);
+}
+.O_Container > .A_Title {
+  font-size: var(--fs-2xl);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: var(--space-5);
+}
+.M_Card {
+  border: 1rem solid var(--line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.M_Card .A_Title {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--ink);
+}
+.M_Card p {
+  font-size: var(--fs-sm);
+  color: var(--ink-faint);
+  white-space: nowrap;
+}

@@ -1,0 +1,14 @@
+.Q_IndexSectionButtonIcon {
+  position: absolute;
+  width: 20rem;
+  height: 2rem;
+  background-color: var(--on-accent);
+  opacity: 0;
+  top: 21rem;
+  left: 14rem;
+  transition: opacity 0.3s var(--ease);
+}
+.Q_Hightlight {
+  background-color: var(--amber-soft);
+  color: var(--ink);
+}

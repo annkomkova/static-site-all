@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <analytics></analytics>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Стайлгайд</title>
+    <meta name="title" content="Стайлгайд" />
+    <meta
+      name="description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://annkomkova.github.io/static-site-09-25/styleguide.html"
+    />
+    <meta property="og:title" content="Стайлгайд" />
+    <meta
+      property="og:description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/annkomkova/static-site-09-25/refs/heads/main/src/images/meta/og-styleguide.webp"
+    />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://annkomkova.github.io/static-site-09-25/styleguide.html"
+    />
+    <meta property="twitter:title" content="Стайлгайд" />
+    <meta
+      property="twitter:description"
+      content="Стайлгайд учебного проекта. Рассказывает о логотипе, основных и дополнительных цветах, типографике, бренде и графике."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/annkomkova/static-site-09-25/refs/heads/main/src/images/meta/og-styleguide.webp"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+  </head>
+  <body class="S_Styleguide">
+    <header class="O_Header">
+      <nav class="W_HeaderLinks">
+        <a href="index.html" class="A_HeaderLink">На главную</a>
+      </nav>
+
+      <section class="M_Header">
+        <h1 class="A_MainHeader">Бренд и&nbsp;стайлгайд</h1>
+        <!-- <img src="images/glassFlower.svg" alt="" class="A_HeaderImage" /> -->
+        <div class="A_HeaderImage"></div>
+      </section>
+    </header>
+
+    <main class="S_Main">
+      <section class="O_Sidebar">
+        <nav class="C_MainSectionLinks">
+          <a class="A_MainSectionLink" href="#brand">Бренд</a>
+          <a class="A_MainSectionLink" href="#logo">Лого</a>
+          <a class="A_MainSectionLink" href="#colors">Цвета</a>
+          <a class="A_MainSectionLink" href="#grid">Сетка</a>
+          <a class="A_MainSectionLink" href="#fonts">Типографика</a>
+        </nav>
+      </section>
+
+      <section class="O_MainSection">
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="brand">О проекте</h2>
+          <p class="A_MainSectionText">
+            «Цветочный.» — учебный медиапроект об уходе за домашними
+            растениями: статьи, тесты на знание видов и небольшой
+            словарь терминов. Дизайн собран вокруг спокойной, читаемой
+            типографики и одного акцентного цвета — здесь мы фиксируем,
+            как устроена эта система.
+          </p>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="logo">Лого</h2>
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Логотип — это название проекта в виде текстовой ссылки:
+              «цветочный.» строчными буквами, с точкой в конце. Никакого
+              отдельного знака или иконки — только шрифт и точка,
+              которая отсылает к завершённости, «дошло до дела».
+            </p>
+            <p class="A_MainSectionText">
+              Логотип всегда стоит слева в навигации, использует цвет
+              <code>--ink</code> и не меняет начертание — это единственный
+              элемент интерфейса, где нет hover-анимации цвета, только
+              лёгкое затемнение при наведении.
+            </p>
+          </div>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="colors">Цвета</h2>
+
+          <h3 class="A_SectionDopHeader">Основные цвета</h3>
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Тёмно-графитовый цвет вместо чистого чёрного — для текста
+              и логотипа. Тёплый белый и светло-серый — для фона и
+              границ карточек. Один зелёный акцент — для ссылок,
+              активных состояний и кнопок.
+            </p>
+          </div>
+
+          <div class="C_ColorSwatches">
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--ink);"></div>
+              <span class="A_ColorSwatchName">Ink</span>
+              <span class="A_ColorSwatchHex">#15161A</span>
+            </div>
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--accent);"></div>
+              <span class="A_ColorSwatchName">Accent</span>
+              <span class="A_ColorSwatchHex">#2C6E49</span>
+            </div>
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--paper-soft);"></div>
+              <span class="A_ColorSwatchName">Paper soft</span>
+              <span class="A_ColorSwatchHex">#F4F4F1</span>
+            </div>
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--line-strong);"></div>
+              <span class="A_ColorSwatchName">Line</span>
+              <span class="A_ColorSwatchHex">#CFCEC7</span>
+            </div>
+          </div>
+
+          <h3 class="A_SectionDopHeader">Дополнительные цвета</h3>
+          <p class="A_MainSectionText">
+            Янтарный — для мягких предупреждений и результата «средне»
+            в тестах. Красный — только для ошибок и результата
+            «неверно». Оба используются точечно, не как акцент
+            интерфейса.
+          </p>
+          <div class="C_ColorSwatches">
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--amber);"></div>
+              <span class="A_ColorSwatchName">Amber</span>
+              <span class="A_ColorSwatchHex">#B8860B</span>
+            </div>
+            <div class="W_ColorSwatch">
+              <div class="A_ColorSwatchChip" style="background: var(--red);"></div>
+              <span class="A_ColorSwatchName">Red</span>
+              <span class="A_ColorSwatchHex">#B3392C</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="grid">Сетка</h2>
+
+          <div class="W_MainSectionBlock_row">
+            <p class="A_MainSectionText">
+              Вся вёрстка построена на «резиновых» rem, которые
+              масштабируются от ширины экрана (<code>font-size: calc(1vw / 14.4)</code>
+              на десктопе), поэтому пропорции остаются одинаковыми на
+              любом разрешении без отдельного набора значений под
+              каждый брейкпоинт. Отступы собраны в шкалу из
+              восьми шагов — от 8&nbsp;до&nbsp;96&nbsp;rem — этого
+              достаточно для любой карточки, секции или отступа между
+              абзацами.
+            </p>
+          </div>
+        </article>
+
+        <article class="W_MainSection">
+          <h2 class="A_SectionHeader" id="fonts">Типографика</h2>
+          <p class="A_MainSectionText">
+            Основной шрифт — PT&nbsp;Root&nbsp;UI, гротеск с хорошей
+            поддержкой кириллицы, подключён локально четырьмя
+            начертаниями. Заголовки — с отрицательным трекингом для
+            плотности, текст — с увеличенным межстрочным интервалом
+            для комфортного чтения длинных статей.
+          </p>
+
+          <div class="W_MainSectionBlock_column">
+            <h1 class="A_MainHeader">Заголовок страницы</h1>
+            <h2 class="A_SectionHeader" id="">Подзаголовок</h2>
+            <h3 class="A_SectionDopHeader">Подзаголовок второго уровня</h3>
+            <p class="A_MainSectionText">Основной текст</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="O_Aside"></section>
+    </main>
+
+    <footerPartial></footerPartial>
+  </body>
+</html>

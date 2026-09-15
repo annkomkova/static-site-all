@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основы JavaScript — практика</title>
+  </head>
+  <body class="S_ArticlePage">
+    <nav class="S_Menu">
+      <a class="A_MenuLogo" href="../index.html">цветочный.</a>
+      <div class="C_MenuLinks">
+        <a href="articles.html" class="A_MenuLink">Статьи</a>
+        <a href="tests.html" class="A_MenuLink">Тесты</a>
+        <a href="dictionary.html" class="A_MenuLink">Словарь</a>
+      </div>
+    </nav>
+
+    <header class="O_ArticleHero">
+      <div class="C_ArticlesCardTags" style="margin-bottom: var(--space-3);">
+        <div class="A_ArticleCardTag">учебная страница</div>
+      </div>
+      <h1 class="A_ArticleH1">Основы JavaScript</h1>
+      <p class="A_ArticleLead">
+        Черновая страница для практики: примеры типов данных и работы с
+        DOM разобраны прямо в
+        <code>javascripts/theory.js</code> — откройте консоль
+        разработчика, чтобы увидеть вывод.
+      </p>
+    </header>
+
+    <main class="W_ArticleBody">
+      <article class="O_ArticleContent">
+        <section>
+          <h2 class="A_ArticleH2">Типы данных</h2>
+          <p class="A_ArticleText">
+            В файле объявлены переменные всех базовых типов
+            JavaScript — строка, число, BigInt, булево значение,
+            <code>null</code>, <code>undefined</code>, массив и объект.
+            Откройте <code>theory.js</code> рядом с этой страницой и
+            посмотрите на объявления в самом низу файла.
+          </p>
+          <div class="card">
+            <hgroup>
+              <h2 class="A_ArticleH2" style="margin-top: 0;">Демо: модальное окно</h2>
+              <p class="A_ArticleText">Проверка обработчика клика на кнопке.</p>
+            </hgroup>
+            <button class="showModalWindow A_IndexFormButton">Посмотреть модальное окно</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer style="text-align: center; padding: var(--space-6) 0; color: var(--ink-faint); font-size: var(--fs-sm);">
+      <nav></nav>
+      <div class="names"></div>
+    </footer>
+  </body>
+</html>

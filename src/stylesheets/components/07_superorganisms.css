@@ -1,0 +1,13 @@
+.S_Menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-6);
+  border-bottom: 1rem solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12rem);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  gap: var(--space-5);
+}

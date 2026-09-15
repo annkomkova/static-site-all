@@ -1,0 +1,100 @@
+import { initTest, chooseAnswer } from '../../javascripts/tests.js'
+
+import imgGood from '../../images/results/result_good.svg'
+import imgOk from '../../images/results/result_ok.svg'
+import imgBad from '../../images/results/result_bad.svg'
+
+const stages = [
+  {
+    question:
+      'Какое растение, согласно народной медицине, следует использовать для заживления ран?',
+    answers: [
+      {
+        text: 'ромашка',
+        count: 0
+      },
+      {
+        text: 'брусника',
+        count: 0
+      },
+      {
+        text: 'алоэ',
+        count: 1
+      }
+    ]
+  },
+  {
+    question: 'Какое растение обладает противовоспалительным действием?',
+    answers: [
+      {
+        text: 'ромашка',
+        count: 0
+      },
+      {
+        text: 'аир',
+        count: 0
+      },
+      {
+        text: 'девятисил',
+        count: 1
+      }
+    ]
+  },
+  {
+    question:
+      'Какое растение обладает сильно выраженными бактерицидными свойствами в отношении многих возбудителей болезней, особенно стафилококков и стрептококков?',
+    answers: [
+      {
+        text: 'зверобой',
+        count: 0
+      },
+      {
+        text: 'календула',
+        count: 1
+      },
+      {
+        text: 'каллизия',
+        count: 0
+      }
+    ]
+  },
+  {
+    question:
+      'Какое растение растение является традиционным средством от кашля?',
+    answers: [
+      {
+        text: 'мать-и-мачеха',
+        count: 1
+      },
+      {
+        text: 'ромашка',
+        count: 0
+      },
+      {
+        text: 'шиповник',
+        count: 0
+      }
+    ]
+  }
+]
+
+const resultTable = [
+  {
+    header: 'Ого, кажется, вы отлично знакомы с лекарственными растениями!',
+    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!',
+    image: `${imgGood}`
+  },
+  {
+    header: 'Отличный результат! Но нюансы лучше повторить',
+    paragraph: 'Попробуйте другие наши тесты, чтобы проверить себя!',
+    image: `${imgOk}`
+  },
+  {
+    header: 'Кажется, вы почти не знакомы с этой темой',
+    paragraph: 'Попробуйте ещё раз позднее',
+    image: `${imgBad}`
+  }
+]
+
+initTest(stages)
+chooseAnswer(stages, resultTable)
